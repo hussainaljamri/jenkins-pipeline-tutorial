@@ -8,9 +8,9 @@ pipeline {
     environment {
 	    region = "us-east-1"
         docker_repo_uri = "407057954154.dkr.ecr.us-east-1.amazonaws.com/jenkins-test"
-		task_def_arn = ""
-        cluster = ""
-        exec_role_arn = ""
+		task_def_arn = "arn:aws:ecs:us-east-1:407057954154:task-definition/first-run-task-definition"
+        cluster = "jenkinstest"
+        exec_role_arn = "arn:aws:iam::407057954154:role/ecsTaskExecutionRole"
     }
 
     // Here you can define one or more stages for your pipeline.
