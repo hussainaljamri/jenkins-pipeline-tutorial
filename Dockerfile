@@ -3,9 +3,6 @@ FROM golang:alpine as builder
 COPY . /code
 WORKDIR /code
 
-# Run unit tests
-RUN go test
-
 # Build app
 RUN go build -o sample-app
 
